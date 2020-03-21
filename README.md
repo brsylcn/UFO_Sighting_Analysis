@@ -1,6 +1,6 @@
 # ALIEN INVASION
 ![Alien](https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1687,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1572055031/191024-axe-alien-invasion-tease_apajz2)
-## Level 1: Automatic Table and Date Search (hmw.html _(static/html), hmw.css(static/css), app.js(static/js)_)
+## Level 1: Automatic Table and Date Search (hmw.html _(static/html)_, hmw.css _(static/css)_, app.js _(static/js)_)
 
 - Create a basic HTML web page or use the index.html file provided (we recommend building your own custom page!).
 
