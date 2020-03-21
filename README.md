@@ -26,6 +26,8 @@
 
 ## My own BONUS!!! (index.html, style.css _(static/css)_, app.js _(static/js)_)
 
-I created a website called "Alien Invasion" as my opening page for the assignement. Here is the screen shot and link of Alien Invasion!!!
+- I created a website called "Alien Invasion" as my opening page for the assignement. Here is the screen shot of Alien Invasion!!!
+
+- "index.html" grants the full access of the webpage.
 
 ![INVASION](https://github.com/brsylcn/javascript-challange/blob/master/static/images/aline_invasion_web.PNG)
