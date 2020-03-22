@@ -73,8 +73,16 @@ button.on("click", function () { //---> fonksiyon deklare ediyoruz
   });
 });
 
-var btnReset = d3.select("#reset-btn");
-btnReset.on("click", () => {
-  document.getElementById("input_value").value='';
-  row(ufo_table);
-})
+
+function init() {
+  tb.html("")
+  ufo_table.forEach((spacedata) => {
+    var row = tb.append("tr");
+    Object.values(spacedata).forEach((v) => {
+      var cell = row.append("td");
+      cell.text(v);
+    });
+  });
+  }
+  
+init()
