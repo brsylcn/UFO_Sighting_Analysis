@@ -1,6 +1,6 @@
 var ufo_table = data; //---> Variable aciyoruz ve data ya esitliyoruz
 
-var tb = d3.select("tbody"); //---> tbody den "d3" methoduyla data lari cekiyoruz
+var tb = d3.select("tbody"); //---> tbody den "d3" methoduyla referans aliyoruz
 
 ufo_table.forEach((spacedata) => {
   var row = tb.append("tr");
@@ -10,9 +10,9 @@ ufo_table.forEach((spacedata) => {
   });
 });
 
-var button = d3.select("#filter-btn");
+var button = d3.select("#filter-btn"); //---> tusu seciyoruz
 
-button.on("click", function () {
+button.on("click", function () { //---> fonksiyon deklare ediyoruz
   
   var input_element = d3.select("#datetime");
 
@@ -22,9 +22,9 @@ button.on("click", function () {
   let input_country = d3.select("#country").property("value");
   let input_shape = d3.select("#shape").property("value");
 
-  d3.select("tbody").selectAll("tr").remove();
+  d3.select("tbody").selectAll("tr").remove(); ///---> I am not sure if it is ok here!!!
 
-  let filter_table = ufo_table;
+  let filter_table = ufo_table; ///--->null datalari almamak icin fikir olusturuyoruz
   
   if (input_value !== "") {
     filter_table = ufo_table.filter(row_data => row_data.datetime === input_value);
@@ -42,7 +42,29 @@ button.on("click", function () {
     filter_table = filter_table.filter(row_data => row_data.shape === input_shape);
   }
 
-  filter_table.forEach((spacedata) => {
+  // This one did not work and I am too lazy to fix it now!!!
+  
+  /*function chooseTable(filter_table) {
+    var filter_table = "";
+    switch(filter_table) {
+      case (input_value !== ""):
+        ufo_table.filter(row_data => row_data.datetime === input_value);
+        break;
+      case (input_city !== ""):
+        filter_table = filter_table.filter(row_data => row_data.city === input_city);
+        break;
+      case (input_state !== ""):
+        filter_table = filter_table.filter(row_data => row_data.state === input_state);
+        break;
+      case (input_country !== ""):
+        filter_table = filter_table.filter(row_data => row_data.country === input_country);
+        break;
+      case (input_shape !== ""):
+        filter_table = filter_table.filter(row_data => row_data.shape === input_state);
+        break;
+      }*/
+
+  filter_table.forEach((spacedata) => {  ///---> filtreledigimiz datalari tabloya gonderiyoruz
     var row = tb.append("tr");
     Object.values(spacedata).forEach(v => {
       var cell = row.append("td");
