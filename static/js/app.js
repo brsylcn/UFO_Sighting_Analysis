@@ -72,3 +72,9 @@ button.on("click", function () { //---> fonksiyon deklare ediyoruz
     });
   });
 });
+
+var btnReset = d3.select("#reset-btn");
+btnReset.on("click", () => {
+  document.getElementById("input_value").value='';
+  row(ufo_table);
+})
