@@ -24,7 +24,7 @@
 
 ![GALAXY](https://images-na.ssl-images-amazon.com/images/I/71qLS8RFLnL._AC_SX679_.jpg)
 
-## My own BONUS!!! (index.html, style.css _(static/css)_, app.js _(static/js)_)
+## My own BONUS (index.html, style.css _(static/css)_, app.js _(static/js)_)
 
 - I created a website called "Alien Invasion" as my opening page for the assignement. Here is the screen shot of Alien Invasion!!!
 
